@@ -1,0 +1,278 @@
+/* Add your CSS styles here */
+body
+{
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f9f9f9;
+display: flex;
+flex-direction: column;
+min-height: 100vh; /* Set minimum height of the body to 100% of viewport height */
+}
+header 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0; /* Padding top and bottom 1rem, no padding left and right */
+    z-index: 1000;
+    margin-bottom: 20px;
+}
+.header-content 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem; /* Left and right padding 1rem, no top and bottom padding */
+}
+h1 
+{
+    margin: 0; /* Remove default margins */
+    font-size: 1.5rem; /* Title font size */
+    font-weight: bold; /* Bold */
+    position: static; /* Title remains static */
+}
+nav 
+{
+    position: fixed;
+    top: 0;
+    right: 0; /* Place the navbar on the right */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1000;
+}
+nav a 
+{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem; /* Add some spacing between navbar links */
+}
+main 
+{
+    display: flex;
+    flex-direction: row; /* Changed to row */
+    align-items: flex-start; /* Adjusted alignment */
+    justify-content: center; /* Center main content horizontally */
+    padding: 2rem;
+    flex: 1; /* Expand main content to fill remaining space */
+    margin-top: 80px;
+}
+article 
+{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    flex: 1; /* Added flex property to make it expand */
+    position: relative; /* Set position to relative for absolute positioning of overlay */
+}
+aside 
+{
+    width: auto; /* Set the width of the aside */
+    height: auto; /* Set the aside height */
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 0rem;
+    text-align: center;
+    margin-right: 1rem; /* Added margin-right for spacing */
+    flex-shrink: 0; /* Prevents aside from shrinking */
+}
+footer
+{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0rem;
+    width: 100%; /* Ensure footer spans the full width */
+    margin-top: auto; /* Move footer to the bottom */
+}
+.about-me 
+{
+    display: flex;
+    flex-direction: column; /* Set the content layout to column layout */
+    align-items: flex-start; /* Set the content to start from the left side */
+}
+.about-me h2 
+{
+    margin-bottom: 0.5rem; /* Adding a little space under the title */
+}
+.about-me .education-info 
+{
+    display: flex;
+    justify-content: space-between; /* Positioning text on the right side */
+    align-items: center; /* Set the center vertical */
+}
+.about-me .education-info p 
+{
+    margin-bottom: 0.5rem; /* Adding a little space below the text */
+}
+.about-me::after 
+{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.5s ease;
+    pointer-events: none; /* Ensure the overlay doesn't interfere with clicks */
+}
+.about-me.focus::after 
+{
+    border-color: yellow;
+}
+.educati-on .education-info 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.educati-on .education-info .degree 
+{
+    margin-right: auto; /* Set the text "Bachelor of Informatics Engineering, Kuningan University" to the left side */
+}
+.educati-on .education-info .duration 
+{
+    margin-left: auto; /* Set the text "2021 - Now" to the right side */
+}
+.educati-on::after 
+{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.5s ease;
+    pointer-events: none; /* Ensure the overlay doesn't interfere with clicks */
+}
+.educati-on.focus::after 
+{
+    border-color: yellow;
+}
+.experien-ce::after 
+{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.5s ease;
+    pointer-events: none; /* Ensure the overlay doesn't interfere with clicks */
+}
+.experien-ce.focus::after 
+{
+    border-color: yellow;
+}
+.certificat-es::after 
+{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.5s ease;
+    pointer-events: none; /* Ensure the overlay doesn't interfere with clicks */
+}
+.certificat-es.focus::after 
+{
+    border-color: yellow;
+}
+.skil-ls::after 
+{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.5s ease;
+    pointer-events: none; /* Ensure the overlay doesn't interfere with clicks */
+}
+.skil-ls.focus::after 
+{
+    border-color: yellow;
+}
+.conta-ct::after 
+{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.5s ease;
+    pointer-events: none; /* Ensure the overlay doesn't interfere with clicks */
+}
+.conta-ct.focus::after 
+{
+    border-color: yellow;
+}
+.projec-ts::after 
+{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.5s ease;
+    pointer-events: none; /* Ensure the overlay doesn't interfere with clicks */
+}
+.projec-ts.focus::after 
+{
+    border-color: yellow;
+}
+/* Media queries */
+@media only screen and (max-width: 768px) 
+{
+    main 
+    {
+        flex-direction: column; /* Change to column layout for tablets and below */
+    }
+    aside 
+    {
+        margin-right: 0; /* Remove margin-right for mobile layout */
+        margin-bottom: 1rem; /* Add margin-bottom for better spacing */
+    }
+}
+@media only screen and (max-width: 480px) 
+{
+    main
+    {
+        padding: 1rem; /* Adjust padding for mobile layout */
+    }
+    aside 
+    {
+        margin-right: 0; /* Remove margin-right for mobile layout */
+        margin-bottom: 1rem; /* Add margin-bottom for better spacing */
+        order: -1; /* Move aside to the top on small screens */
+    }
+    aside img 
+    {
+        max-width: 100%; /* Set maximum width of the image to 100% */
+        height: auto; /* Ensure aspect ratio is maintained */
+    }
+}  
